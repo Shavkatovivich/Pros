@@ -1,0 +1,252 @@
+.accordion__blog {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.accordion__img {
+    position: absolute; 
+    display: block;
+    left: -2.5%;
+    width: 600px;
+    height: 950px; 
+    margin-top: -390px;
+    object-fit: cover;
+}
+
+.accordion__box {
+    border: 1px solid #e7e7e7;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    box-sizing: border-box;
+    height: 350px;
+    overflow-y: scroll;
+    width: 500px;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    /* height: 100px; */
+    color: #037B35;
+  }
+
+ ::-webkit-scrollbar-thumb {
+    background: #037B35;
+    border-radius: 30px;
+    height: 100px;
+  }
+
+.accordion__info-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #037B35;
+    width: 482px;
+    height: 105px;
+    margin-bottom: 20px;
+}
+
+.accordion__info-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    width: 488px;
+    height: 52px;
+    margin-bottom: 30px;
+}
+
+.accordion__box-heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 35px 19px 40px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.accordion__box-heading {
+    transition: 1s ease;
+}
+
+
+.accordion__heading-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #037B35;
+    width: 343px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    transition: 1s ease;
+}
+
+ .accordion__content-text {
+    padding: 0px 35px 0px 40px;
+    display: flex;
+    display: none;
+} 
+
+ .accordion__content-text.show {
+    display: block;
+    height: auto;
+    opacity: 1;
+} 
+
+.accordion__heading-exit {
+    font-size: 25px;
+    color: #037B35;
+}
+
+
+@media(max-width:1180px) {
+    .container {
+        width: 1000px;
+    }
+
+    
+    .accordion__img {
+        left: -15.5%;
+        margin-top: -350px;
+        object-fit: cover;
+    }
+}
+
+
+@media(max-width:1020px) {
+    .container {
+        width: 900px;
+    }
+
+    
+    .accordion__img {
+        position: absolute; 
+        display: block;
+        width: 500px;
+        height: 750px; 
+        margin-top: -220px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:820px) {
+    .container {
+        width: 700px;
+    }
+
+    .accordion__img  {
+        display: none;
+    }
+
+    .accordion__blog {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:520px) {
+    .container {
+        width: 400px;
+    }
+
+    .acordion__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .accordion__info-title {
+        font-size: 30px;
+        line-height: 28px;
+        width: 382px;
+        height: 80px;
+    }
+
+    .accordion__info-text {
+        font-size: 15px;
+        line-height: 26px;
+        width: 288px;
+        height: 52px;
+    }
+
+    .accordion__box {
+        width: 400px;
+        /* height: auto; */
+    }
+    
+}
+
+
+@media (max-width:420px) {
+    .container {
+        width: 300px;
+    }
+
+    .accordion__box-heading {
+        padding: 20px 20px 19px 20px;
+    }
+
+    .accordion__heading-title {
+        font-size: 13px;
+        line-height: 13px;
+        width: 235px;
+        letter-spacing: 0.2px;
+    }
+
+    .acordion__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .accordion__info-title {
+        font-size: 22px;
+        line-height: 22px;
+        width: 261px;
+        height: 58px;
+    }
+
+    .accordion__info-text {
+        font-size: 15px;
+        line-height: 18px;
+        width: 288px;
+        height: 52px;
+    }
+
+    .accordion__box {
+        width: 300px;
+        /* height: auto; */
+    }
+
+    .accordion__content-text {
+        font-size: 14px;
+    }
+    
+}
+
+
+/* 
+    1450 1280
+    1290 1170
+    1180 1000
+    1020 900
+    920 800
+    820 700
+    720 600
+    620 500
+    520 400
+    420 300
+*/
