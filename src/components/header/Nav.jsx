@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useRef} from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import "./header.css"
 

@@ -10,7 +10,7 @@ const Accordeon = () => {
     const [selected, setSelected] = useState(null)
 
     const  toggle = (i) => {
-        if (selected == i) {
+        if (selected === i) {
             return setSelected(null)
         } else {
             setSelected(i)
@@ -34,9 +34,9 @@ const Accordeon = () => {
                                             <div className="item ">
                                                 <div className="title accordion__box-heading" onClick={() => toggle(i)}>
                                                     <h2 className="accordion__heading-title">{item.quesion}</h2>
-                                                    <span className="accordion__heading-exit">{selected == i ? "-" : "+"}</span>
+                                                    <span className="accordion__heading-exit">{selected === i ? "-" : "+"}</span>
                                                 </div>
-                                                <div className={selected == i ? "accordion__content-text show" : "accordion__content-text"}>{item.answer}</div>
+                                                <div className={selected === i ? "accordion__content-text show" : "accordion__content-text"}>{item.answer}</div>
                                             </div>
                                         ))}
                                 </div>

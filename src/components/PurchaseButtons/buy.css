@@ -1,15 +1,13 @@
 
 
 .modal__form-title {
+    text-align: center;
     color: #fff;
 }
 
 .modal__form {
-    /* opacity: 0; */
     display: flex;
     justify-content: center;
-    align-items:center;
-    text-align: center;
     flex-direction: column;
     width: 330px;
     height: 400px;
@@ -19,7 +17,6 @@
 
 
 .murojaat {
-    /* opacity: 0; */
     margin-left: auto;
     margin-right: auto;
     position: fixed;
@@ -29,7 +26,6 @@
     top: 0;
     z-index: 9999;
     display: none;
-    /* padding-top: 100px; */
     -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px);
     background-color: rgba(0,0,0,.5);
@@ -57,6 +53,8 @@
     justify-content: flex-start;
     text-align: start;
     color: green;
+    padding-left: 30px;
+    margin-top: 30px;
 }
 
 .modal__form-input {
@@ -66,6 +64,8 @@
     outline: none;
     background-color: transparent;
     color: #fff;
+    width: 80%;
+    margin-left: 30px;
 }
 
 .modal__form-link {
@@ -89,6 +89,11 @@
     background-color: green;
 }
 
+.buy__links {
+    display: flex;
+    align-items: center;
+}
+
 .modal__link {
     background: #037b35;
     border: 2px solid #037b35;
@@ -105,9 +110,6 @@
     transition: .3s;
 }
 
-.modal__link:nth-child(1)  {
-    margin-left: -60px;
-}
 
 .modal__link:nth-child(1):hover  {
    background-color: #fff;

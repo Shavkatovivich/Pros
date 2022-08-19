@@ -14,8 +14,10 @@ const Buy = () => {
   return (
     <div>
         <div className="container">
-                <Link className="modal__link" to="#" onClick={showExit}>XARID QILISH</Link>
-                <Link className="modal__link" to="#" onClick={showExit}>BOG'LANISH</Link>
+               <div className="buy__links">
+                  <Link className="modal__link" to="#" onClick={showExit}>XARID QILISH</Link>
+                 <Link className="modal__link" to="#" onClick={showExit}>BOG'LANISH</Link>
+               </div>
                  <div className="modal__murojaat">
                     <div className="murojaat" ref={btnExit}>
                             <button className="modal__form-btn" onClick={showExit}>x</button>
