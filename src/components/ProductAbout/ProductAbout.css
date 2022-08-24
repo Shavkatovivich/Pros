@@ -30,6 +30,29 @@
   margin-bottom: 100px;
 }
 
+.product__header-btn {
+  width: 60px;
+  animation-name: buttonAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes buttonAnimation {
+  0%   {
+      width: 40px;
+      box-shadow: rgba(194, 210, 15, 0.2) 0px 4px 20px 0px;
+  }
+
+  50%  {
+      width: 50px;
+  }
+
+  100%  {
+      width: 60px;
+  }
+}
+
+
 .big-wrapper {
    display: flex;
   justify-content: space-between;

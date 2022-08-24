@@ -13,6 +13,7 @@ import videoBtn from "../../assets/img/video-btn.png"
 import rightCircle from "../../assets/img/intro__right-circle.svg"
 import headerBottomImg from "../../assets/img/yellow-green-images.png"
 
+
 const Header = () => {
     const burgerNavbar = useRef();
 
@@ -23,6 +24,11 @@ const Header = () => {
     return (
         <div>
             <header className="header">
+                <div className="header__video">
+                    {/* <video autoplay="" class="videocha header-video headers-video" id="myVideo" loop="">
+                        <source src={require("../../assets/video/Videos.mp4")} type="video/mp4"></source>
+                </video> */}
+                </div>
                 <div className="container">
                     <div className="site__header">
                         <nav className="site__nav">
@@ -77,7 +83,9 @@ const Header = () => {
                            <div className="intro__right-images">
                                 <div className="intro__right-img"></div>
                            </div>
-                            <button className="intro__right-videoBtn"><img src={videoBtn} alt="videoBtn images" width={129}/></button>
+                            <button className="intro__right-videoBtn">
+                                <img src={videoBtn} alt="videoBtn images" width={129}/>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -13,6 +13,8 @@ import Nav from './components/header/Nav';
 import Product from './components/production/Product';
 import Category from './components/category/Category';
 import ProductAbout from "./components/ProductAbout/ProductAbout"
+import More from "./components/more/More"
+import MoreAbout from './components/moreAbout/MoreAbout';
 
 function App() {
   return (
@@ -36,6 +38,19 @@ function App() {
             <ProductAbout/>
             <Form />
           </Route>
+
+          <Route path="/more" element={<More/>}>
+            <Header/>   
+            <More/>
+            <Form />
+          </Route>
+
+          <Route path="/moreId=:moreId" element={<MoreAbout/>}>
+            <Nav/>
+            <MoreAbout/>
+            <Form />
+          </Route>
+
       </Switch>
       <Footer />
     </div>

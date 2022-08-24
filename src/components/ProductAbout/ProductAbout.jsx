@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
-import Buy from "../PurchaseButtons/Buy";
 import "./ProductAbout.css";
 import "../PurchaseButtons/buy.css"
 

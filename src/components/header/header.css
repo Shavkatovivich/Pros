@@ -1,14 +1,15 @@
 .header {
-    background-image: url("../../assets/img/intro-img.png");
+    background-image: url("../../assets/img/header__images.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
 }
 
+
 .site__nav{
     display: flex;
     justify-content: space-around;
-    align-items: aic
+    /* align-items: aic */
 }
 
 .site__nav-list {
@@ -100,7 +101,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
-    color: rgba(255, 255, 255, 0.55);
+    color: #FFFFFF;
     width: 487px;
     margin-bottom: 15px;
 }
@@ -125,7 +126,7 @@
 }
 
 .intro__left-link:hover {
-    background-color: transparent;
+    background-color: #000;
     border: 1px solid  #FCBD17;
 }
 

@@ -1,0 +1,130 @@
+.more__title {
+    font-size: 45px;
+    font-weight: 800px;
+    padding-bottom: 25px;
+}
+
+.more__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.more__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 2px solid #d9dcec;
+    border-radius: 12px;
+    height: 337px;
+    margin: 20px 0;
+    padding: 20px 20px 30px;
+    transition: .3s;
+    width: 350px;
+}
+
+.more__list-item:hover {
+    border: 2px solid #037b35;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.more__item-img {
+    height: 150px;
+    object-fit: cover;
+    width: 300px;
+}
+
+.more__info-title {
+    color: #529352;
+    font-size: 18px;
+    font-weight: 600;
+    height: 46px;
+    margin: 5px 0;
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    width: 350px;
+    width: 279px;
+}
+
+.more__info-text {
+    color: #a1a5a8;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    width: 300px;
+}
+
+@media(max-width:820px) {
+    .container {
+        width: 700px;
+    }
+
+    .more__title  {
+        text-align: center;	
+    }
+
+    .more__list  {
+        justify-content: center;
+    }
+
+    .more__list-item {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:720px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media(max-width:620px) {
+    .container {
+        width: 500px;
+    }
+}
+
+@media(max-width:520px) {
+    .container {
+        width: 400px;
+    }
+}
+
+@media(max-width:420px) {
+    .container {
+        width: 300px;
+    }
+
+    .more__list-item {
+        width: 300px;
+    }
+
+    .more__item-img {
+        height: 150px;
+        object-fit: contain;
+        width: 300px;
+    }
+
+    .more__info-title {
+        height: 46px;
+        margin: 5px 0;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: wrap;
+        width: 90%;
+    }
+    
+    .more__info-text {
+        text-align: center;
+        height: 60px;
+        width: 250px;
+        padding-left: 20px;
+    }
+}

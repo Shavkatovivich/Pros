@@ -83,7 +83,7 @@ const Production = () => {
                                 <h1 className="company__left-title">BIZ HAQIMIZDA</h1>
                                 <p className="company__left-text">Bizning kompaniya 2016-yilda tashkil topib, ko'plab kishilarda issiqxona qurishdagi mahsulotlari yetkazishda va qurishda katta xizmat qilib keladi. Sohadagi katta tajribamiz sabab mijozlarimiz ishonchini egallab, yanada rivojlanishda davom etmoqdamiz.</p>
                                 <div className="company__left-links">
-                                    <Link className="left__links-more" to="/">KO'PROQ</Link>
+                                    <Link className="left__links-more" to="/more">KO'PROQ</Link>
                                     <Link className="left__links-more" to="/" onClick={showExit}>BIZNING YOUTUBE</Link>
                                 </div>
 

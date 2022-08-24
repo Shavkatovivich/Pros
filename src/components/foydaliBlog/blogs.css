@@ -20,7 +20,7 @@
     width: 270px;
 }
 
-.blogs__info-title {
+.blogs__right-name {
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -29,7 +29,7 @@
     width: 240px;
 }
 
-.blogs__info-text {
+.blogs__right-text {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
